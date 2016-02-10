@@ -39,26 +39,23 @@ a.penup()
 a.goto(-140,-30)
 a.pendown()
 a.color('red')
-for l in range(1,3):
+
+colours = ['orange', 'yellow', 'green', 'blue']
+
+for i in range(1,4):
+    Star(length,1)
+    a.right(144)
+a.left(144)
+for k in range(0,4):
+    a.color(colours[k])
     for i in range(1,4):
         Star(length,1)
         a.right(144)
-    a.left(144)
-    a.color('orange')
+    a.penup()
+    a.fd(200)
+    a.pendown()
 
-a.right(180)
-a.penup()
-Star(length, -1)#goes opposite to the other sides 
-a.pendown()
-a.right(36)
-a.color('yellow')
 
-for i in range(1,4):
-    Star(length, 1)
-    a.right(144)
-a.left(144)
-##    Colour = str(input('The colour is ='''))
-##    a.color(Colour)
 
 
 
