@@ -4,8 +4,8 @@ a = turtle.Turtle()
 a.speed(0)
 
 HowSmall = int(input('detail(integer)(the smaller the number gets, the more detailed it gets = ')) #The smaller the number gets, the more detailed it gets
-SizeOfTheStar = int(input('The size of the star = '))# Size of the star. From left end to the right end.
-length = SizeOfTheStar
+length = int(input('The size of the star = '))# Size of the star. From left end to the right end.
+
 
 def Star(length, scale):
 
@@ -52,7 +52,7 @@ for k in range(0,4):
         Star(length,1)
         a.right(144)
     a.penup()
-    a.fd(200)
+    a.fd(length)
     a.pendown()
 
 
